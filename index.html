@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Form CSS</title>
+        <style>
+            form{
+                border: 2px solid black;
+                padding: 2%;
+                background-color:#f5f7fa;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 17px;
+            }
+            .container{
+                display: flex;
+                margin: 2%;
+                height: 5%;
+            }
+            .forlable{
+                width: 20%;
+            }
+            .forinput{
+                width: 30%;
+            }
+            input{
+                background-color: #f5f7fa02;
+                border: none;
+                border-bottom: 2px solid red;
+                width: 100%;
+                transition-duration: 1s;
+            }
+            input:focus{
+                outline: none;
+                border-bottom: 2px solid  green;
+                margin-top: 1%;
+            }
+            input[type=submit]{
+                width: 10%;
+                padding: 1%;
+                border: none;
+                background-color: gray;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <div class="container">
+                <div class="forlable">
+                    <label>User Name : </label>
+                </div>
+                <div class="forinput">
+                    <input type="text" />
+                </div>
+            </div>
+            <div class="container">
+                <div class="forlable">
+                    <label>User Email : </label>
+                </div>
+                <div class="forinput">
+                    <input type="email" />
+                </div>
+            </div>
+            <div class="container">
+                <div class="forlable">
+                    <label>User Password : </label>
+                </div>
+                <div class="forinput">
+                    <input type="password" />
+                </div>
+            </div>
+            <div class="container">
+                <input type="submit" />
+            </div>
+        </form>
+    </body>
+</html>

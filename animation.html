@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            .ani{
+                height: 10%;
+                /* width: 100%; */
+                background-color: green;
+                /* Call the animation */
+                animation-name: second;
+                animation-duration: 10s;
+                animation-iteration-count: 1;
+                /* animation-timing-function: ; */
+                animation-fill-mode:both;
+                animation-direction:alternate-reverse;
+                animation-delay: 5s;
+            }
+            /* Animation define -> keyfram */
+            @keyframes grras {
+                from{
+                    /* Starting point */
+                    width: 0;
+                }
+                to{
+                    /* Ending point */
+                    width: 100%;
+                }
+            }
+            @keyframes second {
+                0%{
+                    width: 0;
+                    background-color: white;
+                    height: 10%;
+                }
+                10%{
+                    width: 10%;
+                    background-color: blue;
+                    height: 10%;
+                }
+                20%{
+                    width: 20%;
+                    background-color: gray;
+                    height: 10%;
+                }
+                30%{
+                    width: 30%;
+                    background-color: palevioletred;
+                    height: 10%;
+                }
+                40%{
+                    width: 40%;
+                    background-color: yellowgreen;
+                    height: 40%;
+                }
+                50%{
+                    width: 50%;
+                    background-color: tomato;
+                    height: 40%;
+                }
+                60%{
+                    width: 60%;
+                    background-color: violet;
+                    height: 10%;
+                }
+                80%{
+                    width: 80%;
+                    background-color: yellow;
+                }
+                100%{
+                    width: 100%;
+                    background-color: sienna;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ani"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, commodi.</p>
+    </body>
+</html>

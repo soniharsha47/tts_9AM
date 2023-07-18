@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .head{
+            background-color: green;
+            height: 10vh;
+            /* width: 70vw; */
+            margin: 5rem;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .sub{
+            background-color: gold;
+            margin: 1rem;
+            height: 10rem;
+            width: 10rem;
+        }
+
+        /* Tablet */
+        @media (max-width:1300px) {
+            .head{
+                background-color: bisque;
+            }
+        }
+
+        /* Mobile  */
+        @media (max-width:450px) {
+            .head{
+                background-color: gray;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="main">
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+
+    </div>
+    <a href="filename.pdf"></a>
+</body>
+</html>
